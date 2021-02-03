@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  div.subheader
+    h2 Books
+
+  a.create_link(href="/books/new", class="btn-new") Create Book &#43;
+  
+  div.books
+   each book in books
+    book
+     li
+      h3= book.title
+      p#author=book.author
+      p=book.genre
+      p=book.year
+      a(href = "/books/" + book.id) Delete / Edit book &rarr;

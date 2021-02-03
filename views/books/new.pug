@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  div.subheader
+   h2= title
+  
+  include errors
+  
+  form(action="/books", method="post")
+    include form
