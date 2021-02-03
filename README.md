@@ -1,2 +1,2 @@
 # SQL-Library-Manager
- App to stores books to a database and allows CRUD operations
+ App to store books to a database and allow CRUD operations
